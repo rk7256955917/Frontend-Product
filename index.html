@@ -8,28 +8,31 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mm.css">
+    <link rel="stylesheet" href="mm.css" />
     <title>Frontend Product website</title>
   </head>
+
   <body>
     <div class="container">
       <div class="sidebar">
         <h2><i class="fa-solid fa-chart-pie"></i> Dashboard</h2>
-        <p class="item-nav">
+
         <p><i class="fa-solid fa-house"></i> Dashboard</p>
+
+        <p class="menu-item" data-type="users">
+          <i class="fa-solid fa-user"></i>
+          Users
         </p>
 
-        <p class="item-nav">
-        <p><i class="fa-solid fa-user"></i> Users</p>
+        <p class="menu-item" data-type="products">
+          <i class="fa-solid fa-box"></i>
+          Products
         </p>
 
-        <p class="item-nav">
-        <p><i class="fa-solid fa-box"></i> Products</p>
-        </p>
+        <!-- <p><i class="fa-solid fa-user"></i> Users</p>
+        <p><i class="fa-solid fa-box"></i> Products</p> -->
 
-        <p class="item-nav">
         <p><i class="fa-solid fa-cart-shopping"></i> Orders</p>
-        </p>
 
         <p><i class="fa-solid fa-message"></i> Messages</p>
 
@@ -37,7 +40,7 @@
 
         <h3><i class="fa-solid fa-right-from-bracket"></i> Logout</h3>
       </div>
-    
+
       <div class="main">
         <div class="search">
           <div class="search-box">
@@ -52,40 +55,48 @@
             <i class="fa-solid fa-user"></i>
           </div>
         </div>
-        <div class="card">
-          <div class="card1">
+
+        <div class="main-data">
+          <div class="card">
+            <!-- <div class="card1">
             <h4>Total Users</h4>
             <h2>2,458</h2>
-            <p class="rate">
-            <i class="fa-solid fa-arrow-up"></i> 12.5%
-            </p>
+            <p class="rate"><i class="fa-solid fa-arrow-up"></i> 12.5%</p>
           </div>
 
-            <div class="card1">
+          <div class="card1">
             <h4>Total Orders</h4>
             <h2>12,45</h2>
-            <p class="rate">
-            <i class="fa-solid fa-arrow-up"></i> 8.2%
-            </p>
+            <p class="rate"><i class="fa-solid fa-arrow-up"></i> 8.2%</p>
           </div>
 
           <div class="card1">
             <h4>Total Revenue</h4>
             <h2>$48,920</h2>
-            <p class="rate">
-            <i class="fa-solid fa-arrow-up"></i> 15.6%
-            </p>
+            <p class="rate"><i class="fa-solid fa-arrow-up"></i> 15.6%</p>
           </div>
 
-            <div class="card1">
+          <div class="card1">
             <h4>New Messages</h4>
             <h2>328</h2>
-            <p class="rate">
-            <i class="fa-solid fa-arrow-up"></i> 5.1%
-            </p>
+            <p class="rate"><i class="fa-solid fa-arrow-up"></i> 5.1%</p>
+          </div> -->
+          </div>
+          <div class="table-section">
+            <h2>Users Data</h2>
+
+            <div class="table-head">
+              <p>Image</p>
+              <p>Name</p>
+              <p>Email</p>
+              <p>Age</p>
+            </div>
+
+            <div class="users-data"></div>
           </div>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
